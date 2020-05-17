@@ -121,3 +121,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   }
   return true;
 };
+
+// COMBOS
+enum combos {
+  LCC_TILD,
+  LK_QUOT
+};
+
+const uint16_t PROGMEM lcc_combo[] = {KC_L, KC_SCLN, COMBO_END};
+const uint16_t PROGMEM lk_combo[] = {KC_L, KC_K, COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+  [LCC_TILD] = COMBO(lcc_combo, KC_TILD),
+  [LK_QUOT] = COMBO(lk_combo, KC_QUOT)
+};
