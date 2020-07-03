@@ -6,6 +6,8 @@
 
 #include <print.h>
 
+// clang-format off
+
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 #define ALPH 0
 #define NUMS 1
